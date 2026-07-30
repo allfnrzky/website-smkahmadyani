@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-smk-primary: #8b5cf6; /* Ungu sedang (seragam) */
+  --color-smk-secondary: #8b5cf6; /* Ungu sedang */
+  --color-smk-accent: #f5f3ff; /* Ungu sangat muda untuk background */
+}
