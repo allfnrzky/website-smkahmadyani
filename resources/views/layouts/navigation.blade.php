@@ -165,6 +165,9 @@
                 </div>
                 <div class="overflow-hidden">
                     <p class="text-[11px] font-bold text-white truncate">{{ auth()->user()->name }}</p>
+                    @if(auth()->user()->role == 'guru' && auth()->user()->nip)
+                        <p class="text-[9px] text-purple-200 font-bold tracking-tighter truncate">NIP: {{ auth()->user()->nip }}</p>
+                    @endif
                     <p class="text-[9px] text-purple-300 uppercase font-black tracking-tighter italic">Mode {{ auth()->user()->role }}</p>
                 </div>
             </div>
